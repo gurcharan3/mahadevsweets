@@ -1,0 +1,255 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+  color: rgba(102, 101, 101, 0.911);
+  font-size: 22px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3 {
+  text-transform: capitalize;
+}
+.row {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+}
+.logo,
+nav {
+  flex-basis: 50%;
+  vertical-align: center;
+}
+.logo h1 {
+  font-size: 150%;
+  color: rgb(214, 214, 214);
+}
+
+nav ul li {
+  display: inline-flex;
+  margin: 0 1rem;
+  width: 100%;
+  color: rgb(214, 214, 214);
+}
+nav ul {
+  justify-content: flex-end;
+  display: flex;
+  padding: 1% 0;
+}
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(./img/sweet.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  background-attachment: fixed;
+}
+.hero {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+}
+.hero h1 {
+  font-size: 400%;
+  padding-bottom: 20px;
+  color: rgba(226, 226, 226, 0.89);
+}
+.btn:link,
+.btn:visited {
+  padding: 5px 15px;
+  border-radius: 10px;
+  text-decoration: none;
+  margin-right: 20px;
+  border: 2px solid #ff5722;
+  font-size: 140%;
+}
+.btn-full {
+  background-color: #ff5722;
+  color: #fff;
+}
+.btn-ghost {
+  color: #ff5722;
+}
+.btn-full:link:hover,
+.btn-full:visited:hover {
+  background-color: #ff4912;
+}
+.btn-ghost:link:hover,
+.btn-ghost:visited:hover {
+  background-color: #ff4912;
+  color: #fff;
+}
+
+/* ****************images**************** */
+.images {
+  list-style: none;
+  width: 100%;
+}
+
+.images li {
+  display: block;
+  float: left;
+  width: 25%;
+}
+.meal-photo {
+  margin: 0;
+  width: 100%;
+  overflow: hidden;
+  background-color: #000;
+}
+.meal-photo img {
+  opacity: 0.8;
+  width: 100%;
+  height: auto;
+  transform: scale(1.15);
+  transition: all 0.7s;
+}
+.meal-photo img:hover {
+  transform: scale(1.04);
+  opacity: 1;
+}
+.clearfix {
+  zoom: 1;
+}
+.clearfix::after {
+  content: '';
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+/* ************features**************** */
+.feature {
+  padding: 4rem 0;
+}
+.feature div h1 {
+  font-size: 300%;
+}
+.feature .row {
+  justify-content: center;
+  margin-bottom: 2.7rem;
+}
+.feature-card {
+  display: flex;
+  flex-basis: 33.33%;
+}
+.card {
+  margin: 1rem 3.5rem;
+  background-color: rgb(252, 252, 252);
+  border: 0px solid rgba(187, 186, 186, 0.5);
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+.card h3 {
+  font-size: 150%;
+  padding: 1rem 0;
+}
+.card p {
+  line-height: 145%;
+}
+.card i {
+  font-size: 250%;
+  color: #ff5622d0;
+}
+/* ***********baout*************8 */
+.about {
+  background-color: rgb(240, 240, 240);
+  padding: 3rem 0;
+}
+.about-us {
+  display: flex;
+  margin: 3rem 1rem;
+}
+.about-img {
+  flex-basis: 33%;
+  width: 70%;
+  text-align: center;
+}
+.about-img img {
+  width: 70%;
+  margin: 1rem auto;
+  border-radius: 20%;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+.about-desc {
+  flex-basis: 67%;
+  display: flex;
+  align-items: center;
+}
+.about h2 {
+  font-size: 250%;
+  text-align: center;
+}
+/* ***********baout*************8 */
+.customer {
+  display: flex;
+  flex-basis: 33.33%;
+  width: 90%;
+  margin: 0 auto;
+}
+.customer-section {
+  margin: 3rem auto;
+}
+.customer-section h2 {
+  font-size: 250%;
+  text-align: center;
+
+  margin-bottom: 2rem;
+}
+.review img {
+  width: 25%;
+  border-radius: 50%;
+  float: left;
+  margin: 1rem 1rem;
+}
+.review {
+  margin: 0 5%;
+}
+.review h4 {
+  float: left;
+  padding: 0 1rem;
+  margin: auto;
+  text-align: center;
+}
+.img-review {
+  display: flex;
+  justify-content: center;
+}
+
+/* *************foot***************** */
+
+footer {
+  padding: 2rem 0;
+  margin: auto;
+  background-color: rgb(240, 240, 240);
+}
+footer h3 {
+  font-size: 200%;
+  text-align: center;
+}
+.contact {
+  width: 90%;
+  display: flex;
+  margin: 2rem auto 0;
+}
+.contact-details {
+  margin: 1rem auto;
+  padding: 1rem;
+  flex-basis: 50%;
+}
+.contact-map {
+  flex-basis: 50%;
+}
+.contact-map iframe {
+  border: 1px solid rgb(180, 179, 179) !important;
+  border-radius: 25px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  width: 100%;
+}

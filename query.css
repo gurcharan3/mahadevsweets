@@ -1,0 +1,79 @@
+@media screen and (max-width: 1200px) {
+  .card {
+    margin: 0.5rem 2rem;
+  }
+  .review {
+    margin: 0 2%;
+  }
+  .row {
+    max-width: 850px;
+  }
+}
+
+@media screen and (max-width: 875px) {
+  * {
+    font-size: 18px;
+  }
+  .hero {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+  .hero h1 {
+    font-size: 200%;
+  }
+  .btn:link,
+  .btn:visited {
+    font-size: 100%;
+    width: fit-content;
+    margin: 6px 0;
+  }
+  .feature-card {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    width: 80%;
+    height: auto;
+  }
+  .feature div h1 {
+    font-size: 200%;
+    padding: 0.5rem 0;
+  }
+  .about-us {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-desc {
+    padding-top: 20px;
+  }
+  .customer {
+    flex-direction: column;
+  }
+  .review {
+    margin: 1rem 0;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .logo {
+    text-align: center;
+  }
+  .header {
+    height: 60vh;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .contact {
+    flex-direction: column;
+  }
+  .contact-map {
+    width: auto;
+    height: 50px !important;
+  }
+}
